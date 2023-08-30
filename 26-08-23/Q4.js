@@ -23,7 +23,7 @@ function identical1(array1, array2) {
     var arrayMix = [];
     for (var i = 0; i < array1.length; i++) {
         for (var j = 0; j < array2.length; j++) {
-            if (array1[i]=== array2[j]){
+            if (array1[i] === array2[j]) {
                 arrayMix.push(array1[i])
             }
         }
@@ -33,18 +33,33 @@ function identical1(array1, array2) {
 console.log(identical1(array1, array2))
 
 
-var num1 = [123,454,576,823,342,632,555,868,983,323]
-var num2 = [234.786,987,555,323,576,254,123,454,420]
+var num1 = [123, 454, 576, 823, 342, 632, 555, 868, 983, 323]
+var num2 = [234.786, 987, 555, 323, 576, 254, 123, 454, 420]
 
-function identical2(num1,num2){
+function identical2(num1, num2) {
     var numMix = [];
-    for(var i=0;i<num1.length;i++){
-        for(var j=0;j<num2.length;j++){
-            if(num1[i] === num2[j]){
+    for (var i = 0; i < num1.length; i++) {
+        for (var j = 0; j < num2.length; j++) {
+            if (num1[i] === num2[j]) {
                 numMix.push(num1[i])
             }
         }
     }
     return numMix;
 }
-console.log(identical2(num1,num2))
+console.log(identical2(num1, num2))
+
+var number1 = [12, 986, 3, 156, 849, 59, 57, 36, 465, 356, 88, 6, 31, 654, 369]
+var number2 = [96, 564, 41, 31, 85, 394, 3, 369, 745, 986, 155, 849, 12, 46, 5]
+function identical3(num1, num2) {
+    var numberMix = [];
+    for (var i = 0; i < num1.length; i++) {
+        for (var j = 0; j < num2.length; j++) {
+            if (num1[i] === num2[j]) {
+                numberMix.push(num1[i])
+            }
+        }
+    }
+    return numberMix;
+}
+console.log(identical3(number1, number2))
