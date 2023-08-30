@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <form onsubmit="addProduct(event)">
+        <label>Name</label><br>
+        <input type="text" id="name"><br>
+
+        <label>Price</label><br>
+        <input type="number" id="price"><br>
+
+        <label>Image</label><br>
+        <input type="file" id="img"><br>
+
+        <label>Category</label><br>
+        <input type="text" id="category"><br>
+
+        <input type="submit" value="Add"><br>
+    </form>
+
+    <script>
+        function addProduct(event) {
+            event.preventDefault();
+            var username = document.getElementById("name").value;
+            var userprice = document.getElementById("price").value;
+            var userimg = document.getElementById("img").value;
+            var usercat = document.getElementById("category").value;
+            console.log(username, userprice, userimg, usercat)
+            if (username && userprice && userimg && usercat) {
+                var object = { Name: username, Price: userprice, Img: userimg, Category: usercat }
+                var array = JSON.parse(localStorage.getItem("Details")) || []
+                array.push(object)
+                localStorage.setItem("Details", JSON.stringify(array))
+                document.getElementById("name").value = "";
+                document.getElementById("price").value = "";
+                document.getElementById("img").value = "";
+                document.getElementById("category").value = "";
+
+            } else {
+                alert('All fields are mandatory to fill')
+            }
+        }
+    </script>
 </body>
 </html>
