@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/e331b9ba14.js" crossorigin="anonymous"></script>
     <style>
-        *{
+        * {
             padding: 0;
             margin: 0;
+            font-family: Georgia, "Times New Roman", Times, serif;
         }
 
-        #navbar{
+        #navbar {
             /* border: 1px solid black; */
             width: 100%;
-            height: 40px;
+            height: 45px;
             display: flex;
             justify-content: center;
             align-items: center;
-            
+
         }
-        .nav-bg{
+
+        .nav-bg {
             /* border: 1px solid red; */
-            width: 72%;
+            width: 72.5%;
             height: 18px;
             margin: auto;
             display: flex;
@@ -30,43 +33,46 @@
             align-items: center;
         }
 
-        .nav-bg p{
-            font-size: 14px;
+        .nav-bg p {
+            font-size: 12px;
             color: rgb(135, 135, 135);
         }
 
-        .line{
+        .line {
             border-left: 1px solid rgb(135, 135, 135);
             height: 16px;
-            margin: 0px 15px;
+            margin: 0px 17px;
         }
-        #body-bg{
+
+        #body-bg {
             width: 100%;
             height: 290px;
             background-color: rgb(226, 226, 226);
         }
 
-        .top-free-css{
-            width: 72%;
+        .top-free-css {
+            width: 72.5%;
             margin: auto;
             display: flex;
             justify-content: space-between;
             padding-top: 30px;
         }
 
-        .top-text p:nth-child(1){
-            font-size: 66px;
+        .top-text p:nth-child(1) {
+            font-size: 65px;
         }
-        .top-text p:nth-child(2){
-            font-size: 14px;
+
+        .top-text p:nth-child(2) {
+            font-size: 13px;
         }
-        .top-ad{
+
+        .top-ad {
             display: flex;
             align-items: end;
         }
 
-        #category{
-            width: 72%;
+        #category {
+            width: 72.5%;
             height: 60px;
             margin: auto;
             background-color: rgb(51, 51, 51);
@@ -78,18 +84,18 @@
             margin-top: 30px;
         }
 
-        .category-content{
+        .category-content {
             /* border: 1px solid grey; */
             width: 75%;
             display: flex;
             justify-content: space-between;
             color: white;
-            font-size: 20px;
+            font-size: 18px;
         }
 
-        #ad-1{
+        #ad-1 {
             /* border: 1px solid red; */
-            width: 72%;
+            width: 72.5%;
             height: 180px;
             margin: auto;
             background-color: white;
@@ -98,83 +104,220 @@
             align-items: center;
         }
 
-        #mid-content{
-            width: 72%;
+        #mid-content {
+            width: 72.5%;
             margin: auto;
             display: flex;
             justify-content: space-between;
         }
 
-        .mid-content-left{
-            border: 1px solid red;
-            width: 65%;
+        .mid-content-left {
+            /* border: 1px solid red; */
+            width: 66%;
         }
 
-        .title-left{
+        .title-left {
             background-color: rgb(230, 230, 230);
             width: 100%;
         }
 
-        .text-left{
+        .text-left {
             display: inline-block;
-            width: 260px;
+            width: 280px;
             background-color: white;
         }
 
-        .text-left p{
+        .text-left p {
             font-weight: 800;
-            font-size: 17px;
+            font-size: 16px;
             color: rgb(102, 102, 102);
         }
-        
 
-        .mid-content-right{
-            border: 1px solid green;
-            width: 32%;
+        .content-box{
+            /* border: 1px solid blue; */
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .content-left {
+            margin-top: 38px;
         }
 
-        .title-right{
-            background-color: rgb(230, 230, 230);
+        .content-left-1 {
+            /* border: 1px solid green; */
             width: 100%;
         }
 
-        .text-right{
-            display: inline-block;
-            width: 145px;
-            background-color: white;
+        .icons-left {
+            width: 98%;
+            display: flex;
+            justify-content: space-between;
         }
 
-        .text-right p{
-            font-weight: 800;
-            font-size: 17px;
-            color: rgb(102, 102, 102);
+        .icons-left div {
+            border: 1px solid rgb(200, 200, 200);
+            width: 45px;
+            height: 45px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        .mid-right-ad1{
+        .img-left {
+            border: 1px solid rgb(200, 200, 200);
+            border-radius: 10px;
+            margin-top: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px 0px;
+        }
+
+        .content-right{
+            /* border: 1px solid orangered; */
+            width: 41%;
+            margin-top: 38px;
+            display: flex;
+        }
+
+        .cr-img{
+            /* border: 1px solid black; */
+            height: 100%;
+            margin-right: 10px;
+        }
+        .cr-img img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .cr-text p{
+            margin-top: 27px;
+            color: rgb(135, 135, 135);
+            font-weight: 500;
+            font-size: 16px;
+        }
+        .cr-text p:nth-child(1){
+            margin-top: 3px;
+            font-weight: 700;
+        }
+        .cr-text div{
             margin-top: 30px;
+            margin-bottom: -4px;
+        }
+
+        .category{
+            display: flex;
+            margin-top: 40px;
+        }
+        .category p {
+            color: rgb(0, 178, 216);
+            margin-left: 14px;
+        }
+        .category p:nth-child(2){
+            margin-left: 8px;
+        }
+
+        .mid-button{
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-between;;
+            margin-top: 40px;
+        }
+
+        .mid-button button{
+            font-size: 38px;
+            width: 49%;
+            padding: 9px 0px;
+            border: none;
+            border-radius: 8px;
+        }
+        .mid-button button:nth-child(1){
+            background-color: rgb(245, 199, 3);
+            color: rgb(176, 106, 0);
+        }
+        .mid-button button:nth-child(2){
+            background-color: rgb(140, 189, 46);
+            color: rgb(255, 255, 255);
+        }
+
+        .mid-last-text{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(0, 178, 216);
+            margin-top: 30px;
+        }
+
+        .line2{
+            border-left: 1px solid rgb(135, 135, 135);
+            height: 25px;
+            margin: 0px 8px;
+        }
+
+
+
+
+
+        .mid-content-right {
+            /* border: 1px solid green; */
+            width: 31%;
+        }
+
+        .title-right {
+            background-color: rgb(230, 230, 230);
+            width: 100%;
+        }
+
+        .text-right {
+            display: inline-block;
+            width: 150px;
+            background-color: white;
+        }
+
+        .text-right p {
+            font-weight: 800;
+            font-size: 16px;
+            color: rgb(102, 102, 102);
+        }
+
+        .mid-right-ad1 {
+            margin-top: 40px;
             display: flex;
             justify-content: center;
         }
 
-        .mid-right-ad2{
+        .mid-right-ad2 {
             width: 97%;
             margin: auto;
             display: flex;
             justify-content: space-between;
-            margin-top: 20px;
+            margin-top: 30px;
         }
 
-        .content-left-1{
-            border: 1px solid green;
-            width: 50%;
+        footer{
+            background-color: rgb(226, 226, 226);
+            color: rgb(135, 135, 135);
+            height:  75px;
+            margin-top: 735px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        .icons-left{
+        #footer-box{
+            /* border: 1px solid red; */
+            width: 72.5%;
             display: flex;
             justify-content: space-between;
         }
+
+        #footer-box p {
+            font-size: 12.8px;
+        }
     </style>
 </head>
+
 <body>
     <nav id="navbar">
         <div class="nav-bg">
@@ -220,18 +363,65 @@
                         <p>DIFFUSO FREE CSS TEMPLATE</p>
                     </div>
                 </div>
-                <div class="content-left">
-                    <div class="content-left-1">
-                        <div class="icons-left">
-                            <div><i class="fa-brands fa-facebook-f fa-xl"></i></div>
-                            <div><i class="fa-brands fa-twitter fa-xl"></i></div>
-                            <div><i class="fa-brands fa-google-plus-g fa-xl"></i></div>
-                            <div><i class="fa-brands fa-reddit-alien fa-xl"></i></div>
-                            <div><i class="fa-brands fa-stumbleupon fa-xl"></i> </div>
+                <div class="content-box">
+                    <div class="content-left">
+                        <div class="content-left-1">
+                            <div class="icons-left">
+                                <div><i style="color: rgb(59, 89, 152);" class="fa-brands fa-facebook-f fa-xl"></i>
+                                </div>
+                                <div><i style="color: rgb(0, 172, 238);" class="fa-brands fa-twitter fa-xl"></i></div>
+                                <div><i style="color: rgb(219, 74, 57);" class="fa-brands fa-google-plus-g fa-xl"></i>
+                                </div>
+                                <div><i style="color: rgb(206, 227, 248);" class="fa-brands fa-reddit-alien fa-2xl"></i>
+                                </div>
+                                <div><i style="color: rgb(235, 73, 36);" class="fa-brands fa-stumbleupon fa-2xl"></i>
+                                </div>
+                            </div>
+                            <div class="img-left">
+                                <img src="./../../MyProject/Website Clone/Free-css/Image/diffuso.jpg" alt="">
+                            </div>
                         </div>
                         <div></div>
                     </div>
-                    <div></div>
+                    <div class="content-right">
+                        <div class="cr-img">
+                            <img src="./../../MyProject/Website Clone/Free-css/Image/download2.png" alt="">
+                        </div>
+                        <div class="cr-text">
+                            <p>HTML Design</p>
+                            <p>HTML 5</p>
+                            <p>Responsive, Mixed Columns</p>
+                            <p>Mixed</p>
+                            <div>
+                                <img src="./../../MyProject/Website Clone/Free-css/Image/black.gif" alt="">
+                                <img src="./../../MyProject/Website Clone/Free-css/Image/dark-grey.gif" alt="">
+                                <img src="./../../MyProject/Website Clone/Free-css/Image/orange.gif" alt="">
+                                <img src="./../../MyProject/Website Clone/Free-css/Image/white.gif" alt="">
+                            </div>
+                            <p style="color: rgb(0, 178, 216);">Creative Commons</p>
+                            <p>14 February 2023</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="category">
+                    <img src="./../../MyProject/Website Clone/Free-css/Image/download-tag.png" alt="">
+                    <p>Business,</p>
+                    <p>Bootstrap,</p>
+                    <p>jQuery,</p>
+                    <p>Services,</p>
+                    <p>Webdesign,</p>
+                    <p>Responsive</p>
+                </div>
+                <div class="mid-button">
+                    <button>DOWNLOAD</button> 
+                    <button>LIVE DEMO</button>
+                </div>
+                <div class="mid-last-text">
+                    <p>« Convid Template</p>
+                    <div class="line2"></div>
+                    <p>Templates</p>
+                    <div class="line2"></div>
+                    <p>Meetup Template »</p>
                 </div>
             </div>
 
@@ -248,15 +438,21 @@
 
                 <div class="mid-right-ad2">
                     <div>
-                        <img src="https://cdn4.buysellads.net/uu/5/114695/1647862131-125x125-4.png" alt="">
+                        <img src="./../../MyProject/Website Clone/Free-css/Image/advertise-here-125x125 (2).png" alt="">
                     </div>
                     <div>
                         <img src="https://cdn4.buysellads.net/uu/5/114695/1647862131-125x125-4.png" alt="">
                     </div>
                 </div>
             </div>
-            
         </div>
     </div>
 </body>
+<footer>
+    <div id="footer-box">
+        <p>Copyright © 2007 - 2023 - Free CSS. All Rights Reserved</p>
+        <p>XML Sitemap | Privacy</p>
+    </div>
+</footer>
+
 </html>
