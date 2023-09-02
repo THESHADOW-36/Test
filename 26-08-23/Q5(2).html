@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Products</title>
+    <style>
+        p {
+            margin: 0;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <form onsubmit="addProduct(event)">
+        <label>Name</label><br>
+        <input type="text" id="productsname"><br>
+        <label>Price</label><br>
+        <input type="number" id="productsprice"><br>
+        <label>Image</label><br>
+        <input type="text" id="productsurl"><br>
+        <br>
+        <input type="checkbox" id="checkbox">
+        <p>Agree the term and condition</p><br>
+        <input type="radio" id="myradio">
+        <p>Agree the term and condition</p>
+        <br>
+        <br>
+        <input type="submit">
+    </form>
+
+    <script>
+        function addProduct(event) {
+            event.preventDefault();
+            var name = document.getElementById("productsname").value
+            var price = document.getElementById("productsprice").value
+            var img = document.getElementById("productsurl").value
+            var checkbox = document.getElementById("checkbox")
+            var radio = document.getElementById("myradio")
+            console.log(name, price, img, checkbox.checked, radio.checked)
+            if (name && price && img && checkbox.checked && radio.checked) {
+                var object = { Name: name, Price: price, Image: img }
+                var productArray = JSON.parse(localStorage.getItem("Products")) || []
+                productArray.push(object)
+                localStorage.setItem("Products", JSON.stringify(productArray))
+                document.getElementById("productsname").value = "";
+                document.getElementById("productsprice").value = "";
+                document.getElementById("productsurl").value = "";
+                alert("Product added successfully")
+
+            } else {
+                alert("All the feilds are mandatory to fill")
+            }
+        }
+    </script>
+</body>
+
+</html>
