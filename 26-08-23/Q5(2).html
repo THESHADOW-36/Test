@@ -22,11 +22,13 @@
         <label>Image</label><br>
         <input type="text" id="productsurl"><br>
         <br>
+        <input type="radio" class="radio">
+        <p>Single-Product</p><br>
+        <input type="radio" class="radio">
+        <p>Multi-Product</p><br>
+        <br>
         <input type="checkbox" id="checkbox">
         <p>Agree the term and condition</p><br>
-        <input type="radio" id="myradio">
-        <p>Agree the term and condition</p>
-        <br>
         <br>
         <input type="submit">
     </form>
@@ -38,7 +40,7 @@
             var price = document.getElementById("productsprice").value
             var img = document.getElementById("productsurl").value
             var checkbox = document.getElementById("checkbox")
-            var radio = document.getElementById("myradio")
+            var radio = document.getElementsByClassName("radio")
             console.log(name, price, img, checkbox.checked, radio.checked)
             if (name && price && img && checkbox.checked && radio.checked) {
                 var object = { Name: name, Price: price, Image: img }
