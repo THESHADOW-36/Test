@@ -22,9 +22,9 @@
         <label>Image</label><br>
         <input type="text" id="productsurl"><br>
         <br>
-        <input type="radio" class="radio">
+        <input type="radio" name="radio" value="Single-Product">
         <p>Single-Product</p><br>
-        <input type="radio" class="radio">
+        <input type="radio" name="radio" value="Multi-Product">
         <p>Multi-Product</p><br>
         <br>
         <input type="checkbox" id="checkbox">
@@ -40,16 +40,20 @@
             var price = document.getElementById("productsprice").value
             var img = document.getElementById("productsurl").value
             var checkbox = document.getElementById("checkbox")
-            var radio = document.getElementsByClassName("radio")
-            console.log(name, price, img, checkbox.checked, radio.checked)
-            if (name && price && img && checkbox.checked && radio.checked) {
-                var object = { Name: name, Price: price, Image: img }
+            var rad = document.querySelectorAll("radio")
+            // var radio = document.getElementsByClassName("radio")
+
+            console.log(name, price, img, checkbox.checked, rad.checked)
+            if (name && price && img && checkbox.checked) {
+                var object = { Name: name, Price: price, Image: img, Quantity: document.querySelector("input[name = radio]:checked").value}
                 var productArray = JSON.parse(localStorage.getItem("Products")) || []
                 productArray.push(object)
                 localStorage.setItem("Products", JSON.stringify(productArray))
                 document.getElementById("productsname").value = "";
                 document.getElementById("productsprice").value = "";
                 document.getElementById("productsurl").value = "";
+                document.getElementById("checkbox").checked = false;
+                
                 alert("Product added successfully")
 
             } else {
